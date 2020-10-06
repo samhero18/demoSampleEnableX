@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My ASP.NET Application</title>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+   
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">Web Conferencing</a>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Web Confrencing</h2>
+                <hr />
+                <div class="row">
+
+                </div>
+                <div class="row">
+                    <button class="btn btn-sm btn-danger" onclick="EnxApi.GetToken();">Generate Token</button>
+                    <button class="btn btn-sm btn-danger" onclick="EnxApi.CreateRoom()">Create Room</button>
+                    <button class="btn btn-sm btn-danger" onclick="">Get Room List</button>
+                    <button class="btn btn-sm btn-danger" onclick="">Join Room</button>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; Sample App</p>
+        </footer>
+    </div>
+
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/EnxApi.js"></script>
+    <script src="Scripts/EnxRtc.js"></script>
+</body>
+</html>
